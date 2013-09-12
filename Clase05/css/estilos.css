@@ -1,0 +1,164 @@
+/* Estilos principales Mobile */
+
+/* fuentes */
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot');
+	src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('fonts/icomoon.woff') format('woff'),
+		url('fonts/icomoon.ttf') format('truetype'),
+		url('fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.icon-star, .icon-arrow-up, .icon-arrow-down {
+	cursor: pointer;
+}
+
+.icon-star:after {
+	color: white;
+	content: "\e000";
+	float: right;
+	font-family: 'icomoon';
+	font-size: 1.5em;
+	margin-bottom: 0.2em; 
+	text-align: right;
+	width: 10%;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #000;
+}
+
+.estrellaAmarilla:after {
+	color: yellow;
+}
+
+.icon-arrow-up:after, .icon-arrow-down:after {
+	font-family: 'icomoon';
+	font-size: 1.5em;
+	vertical-align: middle;
+}
+
+.icon-arrow-up:after {
+	color: green;
+	content: "\e001";
+}
+.icon-arrow-down:after {
+	color: red;
+	content: "\e002";
+}
+
+/* Generales */
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+h1, h2 {
+	margin: 0.2em 0;
+}
+
+/* Estilos */
+
+header h1 {
+	color: blue;
+	display: inline-block;
+	font-family: 'The Girl Next Door', cursive;
+	font-size: 3em;
+	max-width: 70%;
+}
+header figure {
+	display: inline-block;
+	float: right;
+	width: 20%;
+}
+	figure img {
+		height: auto;
+		width: 100%;
+	}
+
+nav {
+	background-color: blue;
+	clear: both;
+	padding: 0.1em 0;
+	width: 100%;
+}
+
+	nav ul {
+		list-style: none;
+	} 
+
+		nav ul li {
+			display: inline-block;
+			margin-right: 1em;
+		} 
+
+			nav ul li a {
+				color: white;
+				text-decoration: none;
+			}
+
+			nav ul li a:hover {
+				color: orange;
+			}
+
+section {
+	width: 100%;
+}
+
+	section article {
+		background-color: #EEE;
+		border: 2px solid blue;
+		margin: 0.3em 0 4.5em 0;
+		position: relative;
+	}
+
+		section article figure {
+			display: inline-block;
+			margin-right: 0.1em;
+			vertical-align: top;
+			width: 20%;
+		}
+
+		section article .contenidoArticle {
+			display: inline-block;
+			width: 75%;
+		}
+
+		section article h2 {
+			display: inline-block;
+			font-family: 'The Girl Next Door', cursive;
+			font-size: 2em;
+			font-weight: bold;
+		}
+
+			section article h2 a {
+				text-decoration: none;
+			}
+
+		section article .votacion {
+			background-color: #AAA;
+			border-radius: 0 0 10px 10px;
+			margin-top: 2px;
+			position: absolute;
+			top: 100%;
+			text-align: center;
+			width: 20%;
+		}
+
+			section article .votacion p {
+				display: inline-block;
+
+			}
+aside {
+	display: none;
+}
+
+footer {
+	background-color: grey;
+	color: white;
+	font-weight: bold;
+	padding: 2px;
+	text-align: center;
+}
